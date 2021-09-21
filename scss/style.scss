@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.slides {
+    background-color: #111;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_wrapper {
+        width: 100%;
+        display: flex;
+        padding: 0 20px;
+        @media (max-width: 756px) {
+            height: 80%;
+            flex-direction: column;
+        }
+    }
+}
+
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(234, 0, 255);
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease;
+    &._active {
+        flex: 10;
+    }
+    &_text {
+        position: absolute;
+        font-size: 24px;
+        bottom: 10px;
+        left: 10px;
+        margin: 0;
+        opacity: 0;
+    }
+    &._active &_text {
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    &_1 {
+        background-image: url("https://images.unsplash.com/photo-1632250962253-90a9195bbc40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2832&q=80");
+    }
+    // .slide_2
+    &_2 {
+        background-image: url("https://images.unsplash.com/photo-1632220499127-5d9fa1d8f8d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+    }
+    // .slide_3
+    &_3 {
+        background-image: url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+    }
+    // .slide_4
+    &_4 {
+        background-image: url("https://images.unsplash.com/photo-1632227106853-0c5afe0ca9eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+    }
+    // .slide_5
+    &_5 {
+        background-image: url("https://images.unsplash.com/photo-1632163106176-002598d3dd11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=776&q=80");
+    }
+}
