@@ -1,5 +1,2 @@
-#
-
-## Very simple gallery project created with the html,css and little pinch javascript
-
-## [Deploy link](https://involder-edu.github.io/simple-gallery/index.html)
+## [Gallery](https://involder-edu.github.io/simple_project/gallery-js/index.html)
+## [Drag & Drop](https://involder-edu.github.io/simple_project/drag_drop/index.html)
